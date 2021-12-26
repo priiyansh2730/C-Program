@@ -1,0 +1,528 @@
+ques10)C Program to solve area of square
+ans10)
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    float side,area;
+    clrscr();
+ 
+    printf("\n Enter the Length of Side : ");
+    scanf("%f",&side);
+ 
+    area = side * side ;
+ 
+    printf("\n Area of Square : %f",area);
+    getch();
+
+ques26)Write a C program to enter two angles of a triangle and find the third angle
+ans26)#include <stdio.h>
+
+int main()
+{
+    int a, b, c;
+    printf("Enter two angles of triangle:");
+    scanf("%d%d",&a,&b);
+    c = 180 - (a + b);
+    printf("Third angle of the triangle = %d",c);
+
+    return 0;
+}
+
+ques16)Write a C program to enter two numbers and perform all arithmetic operations
+ans16)
+#include <stdio.h>
+
+int main()
+{
+    int num1, num2;
+    int sum, sub, mult, mod;
+    float div;
+    printf("Enter any two numbers: ");
+    scanf("%d%d", &num1, &num2);
+    sum = num1 + num2;
+    sub = num1 - num2;
+    mult = num1 * num2;
+    div = (float)num1 / num2;
+    mod = num1 % num2;
+    printf("SUM = %d\n", sum);
+    printf("DIFFERENCE = %d\n", sub);
+    printf("PRODUCT = %d\n", mult);
+    printf("QUOTIENT = %f\n", div);
+    printf("MODULUS = %d", mod);
+
+    return 0; 
+}
+
+ques22)Write a C program to enter temperature in Fahrenheit and convert to Celsius
+ans22)
+#include <stdio.h>
+
+int main()
+{
+    float celsius, fahrenheit;
+    printf("Enter temperature in Fahrenheit:");
+    scanf("%f",&fahrenheit);
+    celsius = (fahrenheit-32) * 5 / 9;
+    printf("%f Fahrenheit = %f Celsius",fahrenheit,celsius);
+
+    return 0;
+}
+
+ques27)Write a C program to enter base and height of a triangle and find its area.
+ans27)
+#include <stdio.h>
+
+int main()
+{
+    float base, height, area;
+    printf("Enter base of the triangle:");
+    scanf("%f", &base);
+    printf("Enter height of the triangle:");
+    scanf("%f", &height);
+    area = (base * height) / 2;
+    printf("Area of the triangle = %.2f sq.units", rea);
+
+    return 0;
+}
+
+ques21)Write a C program to enter temperature in Celsius and convert it into Fahrenheit
+ans21)
+#include <stdio.h>
+
+int main()
+{
+    float celsius, fahrenheit;
+    printf("Enter temperature in Celsius: ");
+    scanf("%f", &celsius);
+    fahrenheit = (celsius * 9 / 5) + 32;
+
+    printf("%f Celsius = %f Fahrenheit", celsius,fahrenheit);
+
+    return 0;
+}
+
+ques8)C Program to Demonstrate the Working of Keyword long.
+ans8)
+#include <stdio.h>
+int main() 
+{
+    int a;
+    long b;   
+    long long c;  
+    double e;
+    long double f;
+
+    printf("Size of int = %zu bytes \n", sizeof(a));
+    printf("Size of long int = %zu bytes\n", sizeof(b));
+    printf("Size of long long int = %zu bytes\n", sizeof(c));
+    printf("Size of double = %zu bytes\n", sizeof(e));
+    printf("Size of long double = %zu bytes\n", sizeof(f));
+    
+    return 0;
+
+ques33)Write a C program to input a mobile number and display 10 digits on the screen
+ans33)
+#include <stdio.h>
+int main(void)
+{
+    printf("My mobile numberis 7\a4\a5\a1\a0\a3\a6\a3\a07\a2\a");
+    return (0);
+}
+
+ques18)Write a C program to enter length and breadth of a rectangle and find its area
+ans18)
+#include <stdio.h>
+
+int main()
+{
+    float length, width, area;
+    printf("Enter length of rectangle: ");
+    scanf("%f", &length);
+    printf("Enter width of rectangle: ");
+    scanf("%d", &width);
+    printf("Area of rectangle = %f", area);
+
+    return 0;
+}
+
+ques12)C program to find area of trapezium.
+ans12)
+#include <stdio.h>
+ 
+int main()
+{
+    float a, b, h;
+    float area;
+ 
+    printf("Enter the value for two bases & height of the trapezium:");
+    scanf("%f%f%f", &a, &b, &h);
+    area = 0.5 * (a + b) * h ;
+    printf("Area of the trapezium is: %.3f", area);
+    return 0;
+
+ques24)Write a C program to find power of any number x ^ y.
+ans24)
+#include<studio.h>
+#include<math.h>
+
+int main()
+{
+float x,y,z;
+scanf("%f%f",&x,&y);
+z=pow(x,y);
+printf("%f",z);
+return 0;
+}
+
+ques9)C Program to Swap Two Numbers.
+ans9)
+#include<stdio.h>  
+ int main()    
+{    
+int a=10, b=20;      
+printf("Before swap a=%d b=%d",a,b);      
+a=a+b;    
+b=a-b;   
+a=a-b;  
+printf("\nAfter swap a=%d b=%d",a,b);    
+return 0;  
+}  
+
+ques30)Write a C program to enter P, T, R and calculate Simple Interest.
+ans30)
+#include <stdio.h>
+
+int main()
+{
+    float principle, time, rate, SI;
+
+    printf("Enter principle (amount):");
+    scanf("%f", &principle);
+
+    printf("Enter time:");
+    scanf("%f", &time);
+
+    printf("Enter rate:");
+    scanf("%f", &rate);
+
+   
+    SI=(principle*time*rate)/100;
+
+    
+    printf("Simple Interest=%f",SI);
+
+    return 0;
+}
+
+ques11)C Program to find area of triangle using heron’s formula.
+ans11)
+#include<stdio.h>
+#include<math.h>
+
+void main()
+{
+
+     float a,b,c,s,area;
+
+      
+
+     printf("Enter the length of sides of triangle");
+
+     scanf("%f %f %f",&a,&b,&c);
+
+      
+
+     s = (a+b+c)/2; 
+
+     area = (sqrt)(s*(s-a)*(s-b)*(s-c));
+
+      
+
+     printf("Area of triangle =%f",area);
+
+     getch();
+
+}
+
+ques25)Write a C program to enter any number and calculate its square root
+ans25)
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+    double num, root;
+    printf("Enter any number to find square root:");
+    scanf("%f", &num);
+    root = sqrt(num);
+    printf("Square root of %lf = %f", num, root);
+
+    return 0;
+}
+
+ques // to find ASCII value of character.
+#include <stdio.h>
+int main() {  
+    char c;
+    printf("Enter a character: ");
+    scanf("%c", &c);  
+    printf("ASCII value of %c = %d", c, c);
+    return 0;
+} 
+
+ques31)Write a C program to enter P, T, R and calculate Compound Interest.
+ans31)
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+    float principle, rate, time, CI;
+    printf("Enter principle (amount): ");
+    scanf("%f", &principle);
+    printf("Enter time: ");
+    scanf("%f", &time);
+    printf("Enter rate: ");
+    scanf("%f", &rate);
+    CI = principle* (pow((1 + rate / 100), time));
+    printf("Compound Interest = %f", CI);
+
+    return 0;
+}
+
+ques15)Write a C program to enter two numbers and find their sum
+ans15)
+#include<stdio.h>
+int main() 
+{
+int a, b, sum;
+printf("Enter two number:");
+scanf("%d%d",&a,&b);
+sum = a + b;
+printf("Sum:%d", sum);
+return 0;
+}
+
+ques3)C Program to Add Two Integers.
+ans3)
+#include <stdio.h>
+int main()
+{    
+
+    int x,y, sum;
+    
+    printf("Enter two integers: ");
+    scanf("%d %d", &x,&y);
+    sum = number1 + number2;      
+    printf("%d + %d = %d",x,y,sum);
+    return 0;
+}
+
+ques28)Write a C program to calculate area of an equilateral triangle.
+ans28)
+#include <stdio.h>
+#include <math.h> // Used for sqrt() function
+
+int main()
+{
+    float side, area;
+    printf("Enter side of an equilateral triangle:");
+    scanf("%f", &side);
+    area = (sqrt(3)/4)*(side*side);
+    printf("Area of equilateral triangle = %.2f sq. units", area);
+
+    return 0;
+}
+
+ques13)C program to find volume of sphere.
+ans13)
+#include<stdio.h>
+int main(){
+   float volume;
+   int radius;
+   radius=20;
+   volume=((4.0f/3.0f) * (3.1415) * radius* radius* radius);
+   printf("the volume of a sphere is %f",volume);
+   return 0;
+}
+
+ques)
+C Program to Print an Integer (Entered by the User)
+#include <stdio.h>
+
+ans)
+#include <studio.h>
+int main() 
+{   
+    int number;
+   
+    printf("Enter an integer: ");  
+    
+    
+    scanf("%d", &number);
+
+    
+    printf("You entered: %d", number);
+    
+    return 0;
+}
+
+ques)
+C Program to Print an Integer (Entered by the User)
+#include <stdio.h>
+
+ans)
+#include <studio.h>
+int main() 
+{   
+    int number;
+   
+    printf("Enter an integer: ");  
+    
+    
+    scanf("%d", &number);
+
+    
+    printf("You entered: %d", number);
+    
+    return 0;
+}
+
+ques4)C Program to Multiply Two Floating-Point Numbers.
+ans4)
+#include <stdio.h>
+int main() 
+{
+    double a,b,sum;
+    printf("Enter two numbers: ");
+    scanf("%lf %lf",&a,&b);  
+    sum= a * b;
+    printf("Product = %.2lf",sum);
+    
+    return 0;
+}
+
+#include <stdio.h>
+
+int main()
+{
+printf("Hello world");
+return 0;
+}
+
+ques19)Write a C program to enter radius of a circle and find its diameter, circumference 
+and area.
+ans19)#include <stdio.h>
+
+int main()
+{
+    float radius, diameter, circumference, area;    
+    printf("Enter radius of circle: ");
+    scanf("%f", &radius);
+    diameter = 2 * radius;
+    circumference = 2 * 3.14 * radius;
+    area = 3.14 * (radius * radius);
+    printf("Diameter of circle = %.2f units", diameter);
+    printf("Circumference of circle = %.2f units", circumference);
+    printf("Area of circle = %.2f sq. units ", area);
+
+    return 0;
+}
+
+ques20)Write a C program to enter length in centimeter and convert it into meter and 
+kilometer
+ans20)#include <stdio.h>
+
+int main()
+{
+    float cm, meter, km;
+    printf("Enter length in centimeter:");
+    scanf("%f", &cm);
+    meter= cm / 100.0;
+    km= cm / 100000.0;
+
+    printf("Length in Meter = %.2f m", meter);
+    printf("Length in Kilometer = %.2f km", km);
+
+    return 0;
+}
+
+ques17)Write a C program to enter length and breadth of a rectangle and find its perimeter.
+ans17)
+#include <stdio.h>
+
+int main()
+{
+    float length, width, perimeter;
+    printf("Enter length of the rectangle: ");
+    scanf("%f", &length);
+    printf("Enter width of the rectangle: ");
+    scanf("%f", &width);
+    perimeter = 2 * (length + width);
+    printf("Perimeter of rectangle = %f units ", perimeter);
+    return 0;
+}
+
+ques29)Write a C program to enter marks of five subjects and calculate total, average and 
+percentage.
+ans29)
+#include <stdio.h>
+
+int main()
+{
+    float eng, phy, chem, math, comp; 
+    float total, average, percentage;
+
+ 
+    printf("Enter marks of five subjects:");
+    scanf("%f%f%f%f%f",&eng,&phy,&chem,&math,&comp);
+
+    total = eng + phy + chem + math + comp;
+    average = total/5.0;
+    percentage = (total/500.0)*100;
+
+   
+    printf("Total marks = %f", total);
+    printf("Average marks = %f", average);
+    printf("Percentage = %f", percentage);
+
+    return 0;
+}
+
+ques23)Write a C program to convert days into years, weeks and days
+ans23)
+#include <stdio.h>
+
+int main()
+{
+    int days, years, weeks;
+
+    printf("Enter days:");
+    scanf("%d", &days);
+    years = (days/365);  
+    weeks = (days % 365)/7;
+    days  = days-((years * 365) + (weeks * 7));
+    printf("YEARS: %d",years);
+    printf("WEEKS: %d",weeks);
+    printf("DAYS: %d",days);
+
+    return 0;
+}
+
+ques6)C Program to Compute Quotient and Remainder.
+ans6)
+#include <stdio.h>
+int main() 
+{
+    int dividend, divisor, quotient, remainder;
+    printf("Enter dividend: ");
+    scanf("%d", &dividend);
+    printf("Enter divisor: ");
+    scanf("%d", &divisor);
+    quotient = dividend / divisor;
+    remainder = dividend % divisor;
+    printf("Quotient = %d\n", quotient);
+    printf("Remainder = %d", remainder);
+    return 0;C Program to Compute Quotient and Remainder.
+}
